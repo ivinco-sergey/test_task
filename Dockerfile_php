@@ -1,0 +1,7 @@
+FROM php:7.2-cli
+RUN [ "apt-get", "update" ]
+RUN [ "apt-get", "-y", "install", "netcat" ]
+RUN [ "docker-php-ext-install", "mysqli" ]
+COPY test.php /tmp/
+COPY wait-for /tmp/
+CMD [ "php", "/tmp/test.php" ]
