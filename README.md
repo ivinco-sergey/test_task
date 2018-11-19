@@ -1,4 +1,4 @@
-# test_task
+# Test task
 
 ```docker-compose up``` will bring up 2 images: 
   * mysql containing table hn.hackernews, user/pass: root/pass
